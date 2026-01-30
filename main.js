@@ -32,7 +32,7 @@ function main() {
 	controls.update();
 
 	const scene = new THREE.Scene();
-	scene.background = new THREE.Color().setHex( 0x202125);
+	scene.background = new THREE.Color().setHex( 0x000000);
 
 
 
@@ -114,3 +114,4 @@ loader.load(
 
 console.log(THREE.REVISION);
 main();
+
