@@ -1,8 +1,3 @@
-/*
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-*/
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
@@ -51,7 +46,7 @@ loader.load(
     ( gltf ) => {
         // called when the resource is loaded
         scene.add( gltf.scene );
-		gltf.scene.position.set( 0, 1, 0 );
+		gltf.scene.position.set( 0, 16, 0 );
 		
     },
     ( xhr ) => {
@@ -119,8 +114,3 @@ loader.load(
 
 console.log(THREE.REVISION);
 main();
-
-
-
-
-
