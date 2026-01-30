@@ -1,0 +1,86 @@
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  font-family: inherit;
+  text-align: center;
+  color: #fdfdfd;
+  text-decoration: none;
+  letter-spacing: .192px;
+  background-color: #1A3E3E;
+  border: 1px solid #1A3E3E;
+  border-radius: 4px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  appearance: none;
+}
+.button:not(:disabled):hover {
+  color: #1A3E3E;
+  background-color: #fdfdfd;
+  cursor: pointer;
+}
+.button:not(:disabled):active {
+  opacity: 0.7;
+}
+.button--big {
+  padding: 16px 36px;
+}
+.button--light {
+  color: #1A3E3E;
+  background-color: #fdfdfd;
+  border: 0;
+}
+.button--light:not(:disabled):hover {
+  color: #fdfdfd;
+  background-color: #1A3E3E;
+}
+.button::before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  vertical-align: middle;
+}
+.container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            max-width: 600px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 20px;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0056B3;
+        }
+        
+        .result-message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+            display: none;
+        }
