@@ -1,4 +1,5 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@181/build/three.module.js';
+//import * as THREE from 'https://cdn.jsdelivr.net/npm/three@181/build/three.module.js';
+import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
@@ -114,4 +115,5 @@ loader.load(
 
 console.log(THREE.REVISION);
 main();
+
 
