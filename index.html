@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Test</title>
 
     <style>
         html, body{
@@ -27,10 +27,28 @@
 </head>
 <body>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="vopros.js"></script>
     <canvas id="c"></canvas>
-    
+      <div class="container">
+        <h1>Вы намерены продолжить движение прямо. Кому Вы обязаны уступить дорогу?</h1>
+        <form id="quizForm">
+            <label>
+                <input type="radio" name="answer" value="1">Только красному автомобилю
+            </label>
+            <label>
+                <input type="radio" name="answer" value="2">Только синему автомобилю
+            </label>
+            <label>
+                <input type="radio" name="answer" value="3"> Никому
+            </label>
+            <button type="submit">Проверить ответ</button>
+        </form>
+        <div class="result-message"></div>
+    </div>
+
 </body>
 </html>
+
 
 
 
