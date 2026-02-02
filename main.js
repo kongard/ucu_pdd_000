@@ -1,9 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-
+     //Изменения
 function main() {
-
+ 
 	const canvas = document.querySelector( '#c' );
 	const renderer = new THREE.WebGLRenderer( { antialias: true, canvas } );
 
@@ -12,7 +12,7 @@ function main() {
 	const near = 0.1;
 	const far = 10000;
 	const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
-	camera.position.set( 0, 10, 40 );
+	camera.position.set( 0, 0, 40 );
 
 	const controls = new OrbitControls( camera, canvas );
 	controls.target.set( 0, 15, 0 );
