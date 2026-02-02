@@ -12,7 +12,7 @@ function main() {
 	const near = 0.1;
 	const far = 10000;
 	const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
-	camera.position.set( 0, 0, 40 );
+	camera.position.set( 0, 0, 20 );
 
 	const controls = new OrbitControls( camera, canvas );
 	controls.target.set( 0, 15, 0 );
@@ -46,7 +46,7 @@ loader.load(
     ( gltf ) => {
         // called when the resource is loaded
         scene.add( gltf.scene );
-		gltf.scene.position.set( 0, 16, 0 );
+		gltf.scene.position.set( 0, 0, 0 );
 		
     },
     ( xhr ) => {
