@@ -12,9 +12,9 @@ function main() {
 	const near = 0.1;
 	const far = 10000;
 	const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
-	camera.position.set( 0, 0, -10 );
+	camera.position.set( 0, 0, 12 );
 
-	const controls = new Orbitcontrols( camera, canvas );
+	const controls = new OrbitControls( camera, canvas );
 	controls.target.set( 0, 15, 0 );
 	
 	controls.maxAzimuthAngle = ToEul(70);  // limit right
